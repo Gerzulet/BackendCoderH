@@ -35,8 +35,7 @@ class ProductManager {
 
   getElementById = (id) => {
     let producto = this.products.find(el => el.id === id)
-    console.log('Obteniendo producto por ID \n:', producto || 'Producto no encontrado \n')
-    return producto || false
+    return producto 
   }
 
 
@@ -85,6 +84,5 @@ const manager = new ProductManager('./desafio.json')
 // manager.addProduct('Brocoli', 'Verdura', 230, 'sin imagen', 'B2', 25)
 // manager.addProduct('Zanahoria', 'Fruta', 200, 'sin imagen', 'B3', 49)
 // manager.addProduct('Esparrago', 'Verdurak', 500, 'sin imagen', 'B4', 25)
-console.log(manager.getProducts())
 
-export default ProductManager
+export default new ProductManager('./desafio.json')
