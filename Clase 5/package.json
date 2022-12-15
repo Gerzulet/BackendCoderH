@@ -1,0 +1,15 @@
+{
+  "name": "clase-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "LiveClass.js",
+  "scripts": {
+    "start": "node calculadoraEdad",
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}
